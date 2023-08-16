@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
 import { Provider } from "react-redux";
-import { store } from "../../store";
+import { store } from "../../store/toDos";
+import App from "./App";
 
 describe("Given an App component", () => {
   describe("When rendered", () => {
@@ -11,7 +11,7 @@ describe("Given an App component", () => {
       render(
         <Provider store={store}>
           <App />
-        </Provider>
+        </Provider>,
       );
 
       const text = screen.getByText(expectedText);
