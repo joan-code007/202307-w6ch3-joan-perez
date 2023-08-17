@@ -1,7 +1,7 @@
 import ToDo from "../types";
 
-interface ToDoState {
+interface ToDosState {
   toDos: ToDo[];
 }
 
-export default ToDoState;
+export default ToDosState;
