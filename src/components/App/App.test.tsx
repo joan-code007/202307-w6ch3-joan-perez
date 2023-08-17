@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { store } from "../../store/toDos";
+import { store } from "../../store/";
 import App from "./App";
 
 describe("Given an App component", () => {
